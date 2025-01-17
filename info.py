@@ -40,7 +40,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
 TRY_AGAIN_BTN = bool(environ.get('TRY_AGAIN_BTN', False)) # Set True Or False (This try again button is only for request to join fsub not for normal fsub)
-auth_channel = environ.get('AUTH_CHANNEL', '-1001950082957') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1001961681098') # give your force subscribe channel id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -62,7 +62,36 @@ PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) 
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1day')
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/61c83f8bb943cb2639683.jpg')
-PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 10ʀs - 1 ᴡᴇᴇᴋ\n- 35ʀs - 1 ᴍᴏɴᴛʜs\n- 150ʀs - 3 ᴍᴏɴᴛʜs\n- 280ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>aditya98a@fam</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n😊 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
+PAYMENT_TEXT = environ.get(
+    'PAYMENT_TEXT',
+    '''
+💎 <b>ʙʀᴏɴᴢᴇ / sɪʟᴠᴇʀ / ɢᴏʟᴅ ᴘʟᴀɴ 💎</b>
+
+<b>[ 15/- ʀꜱ 1 ᴍᴏɴᴛʜ 💥 ] ʙʀᴏɴᴢᴇ</b>  
+<b>[ 45/- ʀꜱ 3 ᴍᴏɴᴛʜꜱ 🔥 ] sɪʟᴠᴇʀ</b>  
+<b>[ 69/- ʀꜱ 6 ᴍᴏɴᴛʜꜱ 🚀 ] ɢᴏʟᴅ</b>  
+
+<b>ᴜᴘɪ ɪᴅ:</b> <code>aditya98a@fam</code>  
+<b>(ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ❗❗)</b>
+
+🎯 <b>ᴏᴜʀ ᴘʟᴀɴ ꜱᴇʀᴠɪᴄᴇ & ʙᴇɴᴇꜰɪᴛꜱ 🎉</b>  
+
+├ 📽 <b>ɴᴇᴡ/ᴏʟᴅ [ᴍᴏᴠɪᴇꜱ/ꜱᴇʀɪᴇꜱ] ᴄʜᴀɴɴᴇʟ</b>  
+├ 🎞️ <b>ᴘʀᴇᴍɪᴜᴍ [ʀᴇϙᴜᴇꜱᴛ] ɢʀᴏᴜᴘ</b>  
+├ 🏟️ <b>ɴᴇᴡ ʜᴀʟʟ ᴘʀɪɴᴛ ʀᴇʟᴇᴀꜱᴇ ᴍᴏᴠɪᴇꜱ</b>  
+├ 🎥 <b>ᴏʟᴅ/ɴᴇᴡ ᴍᴏᴠɪᴇꜱ & ꜱᴇʀɪᴇꜱ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ᴄʜᴀɴɴᴇʟ</b>  
+├ ⚡ <b>ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋꜱ</b>  
+
+✅ <b>ᴀʟʟ ᴏᴛᴛ ᴘʟᴀᴛꜰᴏʀᴍꜱ:</b>  
+ɴᴇᴛꜰʟɪx, ᴀᴍᴀᴢᴏɴ ᴘʀɪᴍᴇ ᴠɪᴅᴇᴏ, ᴅɪꜱɴᴇʏ+ ʜᴏᴛꜱᴛᴀʀ, ᴢᴇᴇ5, ꜱᴏɴʏʟɪᴠ, ʜᴏɪᴄʜᴏɪ, ᴍx ᴘʟᴀʏᴇʀ, ꜱʜᴇᴍᴀʀᴏᴏ, ʜʙᴏᴍᴀx, ᴠᴏᴏᴛ, ᴀᴘᴘʟᴇᴛᴠ, ᴛʜᴇ ᴄᴡ, ᴀᴍᴄ+, ʜᴜʟᴜ, ᴄʜᴀᴜᴘᴀʟ, ᴇᴛᴄ.
+
+✅ <b>ʀᴇɢɪᴏɴᴀʟ ᴄᴏɴᴛᴇɴᴛ:</b>  
+ᴘᴜɴᴊᴀʙɪ, ʙᴇɴɢᴀʟɪ, ɢᴜᴊᴀʀᴀᴛɪ, ᴍᴀʀᴀᴛʜɪ, ᴋᴀɴɴᴀᴅᴀ, ᴍᴀʟᴀʏᴀʟᴀᴍ, ᴛᴇʟᴜɢᴜ, ᴛᴀᴍɪʟ, ʜɪɴᴅɪ, ᴇɴɢʟɪꜱʜ, ᴇᴛᴄ.
+
+🎬 <b>ϙᴜᴀʟɪᴛʏ ᴏᴘᴛɪᴏɴꜱ:</b>  
+480ᴘ | 720ᴘ | 720ᴘ (10-ʙɪᴛ) | 1080ᴘ  
+    '''
+)
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'aditya98A') # owner username without @
 
 # Links
