@@ -91,7 +91,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 my features Stay here new features coming soon...  
  <b>✯ Maintained by : <a href=https://t.me/aditya98A>ÄÐï†¥å</a></b>
   
- <b>✯ Join here : <a href=https://t.me/MovieHouseChannelbot>☢Join my updateds☢</a></b> 
+ <b>✯ Join here : <a href=https://t.me/moviehousechannelTM>☢Join my updateds☢</a></b> 
   
  ./id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</ 
  code> 
@@ -685,9 +685,9 @@ special Thanks To ❤️ Developers -
 
 -Dev 2 <a href='https://t.me/+fFmB_6zNOfIzMTdl'>SUPPORT</a>
 
--Dev 3 <a href='https://t.me/MovieHouseChannelbot>Main Channel</a>
+-Dev 3 <a href='https://t.me/moviehousechannelTM>Main Channel</a>
 
-- Dev 4 <a href='https://t.me/MovieHouseChannelbot'>TEAM</a>
+- Dev 4 <a href='https://t.me/moviehousechannelTM'>TEAM</a>
 """
 
     RENAME_TXT = """
