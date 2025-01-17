@@ -51,47 +51,18 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviehouse20:<db_password>@cluster0.ll4hd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviehouse20:moviehouse20@cluster0.ll4hd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
 # Premium And Referal Settings
-PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
+PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1day')
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/61c83f8bb943cb2639683.jpg')
-PAYMENT_TEXT = environ.get(
-    'PAYMENT_TEXT',
-    '''
-💎 <b>ʙʀᴏɴᴢᴇ / sɪʟᴠᴇʀ / ɢᴏʟᴅ ᴘʟᴀɴ 💎</b>
-
-<b>[ 15/- ʀꜱ 1 ᴍᴏɴᴛʜ 💥 ] ʙʀᴏɴᴢᴇ</b>  
-<b>[ 45/- ʀꜱ 3 ᴍᴏɴᴛʜꜱ 🔥 ] sɪʟᴠᴇʀ</b>  
-<b>[ 69/- ʀꜱ 6 ᴍᴏɴᴛʜꜱ 🚀 ] ɢᴏʟᴅ</b>  
-
-<b>ᴜᴘɪ ɪᴅ:</b> <code>aditya98a@fam</code>  
-<b>(ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ❗❗)</b>
-
-🎯 <b>ᴏᴜʀ ᴘʟᴀɴ ꜱᴇʀᴠɪᴄᴇ & ʙᴇɴᴇꜰɪᴛꜱ 🎉</b>  
-
-├ 📽 <b>ɴᴇᴡ/ᴏʟᴅ [ᴍᴏᴠɪᴇꜱ/ꜱᴇʀɪᴇꜱ] ᴄʜᴀɴɴᴇʟ</b>  
-├ 🎞️ <b>ᴘʀᴇᴍɪᴜᴍ [ʀᴇϙᴜᴇꜱᴛ] ɢʀᴏᴜᴘ</b>  
-├ 🏟️ <b>ɴᴇᴡ ʜᴀʟʟ ᴘʀɪɴᴛ ʀᴇʟᴇᴀꜱᴇ ᴍᴏᴠɪᴇꜱ</b>  
-├ 🎥 <b>ᴏʟᴅ/ɴᴇᴡ ᴍᴏᴠɪᴇꜱ & ꜱᴇʀɪᴇꜱ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ᴄʜᴀɴɴᴇʟ</b>  
-├ ⚡ <b>ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋꜱ</b>  
-
-✅ <b>ᴀʟʟ ᴏᴛᴛ ᴘʟᴀᴛꜰᴏʀᴍꜱ:</b>  
-ɴᴇᴛꜰʟɪx, ᴀᴍᴀᴢᴏɴ ᴘʀɪᴍᴇ ᴠɪᴅᴇᴏ, ᴅɪꜱɴᴇʏ+ ʜᴏᴛꜱᴛᴀʀ, ᴢᴇᴇ5, ꜱᴏɴʏʟɪᴠ, ʜᴏɪᴄʜᴏɪ, ᴍx ᴘʟᴀʏᴇʀ, ꜱʜᴇᴍᴀʀᴏᴏ, ʜʙᴏᴍᴀx, ᴠᴏᴏᴛ, ᴀᴘᴘʟᴇᴛᴠ, ᴛʜᴇ ᴄᴡ, ᴀᴍᴄ+, ʜᴜʟᴜ, ᴄʜᴀᴜᴘᴀʟ, ᴇᴛᴄ.
-
-✅ <b>ʀᴇɢɪᴏɴᴀʟ ᴄᴏɴᴛᴇɴᴛ:</b>  
-ᴘᴜɴᴊᴀʙɪ, ʙᴇɴɢᴀʟɪ, ɢᴜᴊᴀʀᴀᴛɪ, ᴍᴀʀᴀᴛʜɪ, ᴋᴀɴɴᴀᴅᴀ, ᴍᴀʟᴀʏᴀʟᴀᴍ, ᴛᴇʟᴜɢᴜ, ᴛᴀᴍɪʟ, ʜɪɴᴅɪ, ᴇɴɢʟɪꜱʜ, ᴇᴛᴄ.
-
-🎬 <b>ϙᴜᴀʟɪᴛʏ ᴏᴘᴛɪᴏɴꜱ:</b>  
-480ᴘ | 720ᴘ | 720ᴘ (10-ʙɪᴛ) | 1080ᴘ  
-    '''
-)
+PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs - \n\n- 10ʀs - 1 ᴡᴇᴇᴋ\n- 35ʀs - 1 ᴍᴏɴᴛʜs\n- 150ʀs - 3 ᴍᴏɴᴛʜs\n- 280ʀs - 6 ᴍᴏɴᴛʜs\n\n🎁 ᴘʀᴇᴍɪᴜᴍ ғᴇᴀᴛᴜʀᴇs 🎁\n\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ\n○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ\n○ ᴅɪʀᴇᴄᴛ ғɪʟᴇs\n○ ᴀᴅ-ғʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ\n○ ʜɪɢʜ-sᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ\n○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋs\n○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs\n○ ꜰᴜʟʟ ᴀᴅᴍɪɴ sᴜᴘᴘᴏʀᴛ\n○ ʀᴇǫᴜᴇsᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ\n\n✨ ᴜᴘɪ ɪᴅ - <code>aditya98a@fam</code>\n\nᴄʟɪᴄᴋ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ /myplan\n\n😊 ᴍᴜsᴛ sᴇɴᴅ sᴄʀᴇᴇɴsʜᴏᴛ ᴀғᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ\n\n‼️ ᴀғᴛᴇʀ sᴇɴᴅɪɴɢ ᴀ sᴄʀᴇᴇɴsʜᴏᴛ ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ᴜs sᴏᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴛʜᴇ ᴘʀᴇᴍɪᴜᴍ</b>')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'aditya98A') # owner username without @
 
 # Links
